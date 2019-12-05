@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NautilusCD by DF</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+    body {
+    
+}
+#q {
+    color: #737373;
+}
+#w{
+    color: 333333;
+}
+#e {
+    color:green;
+}
+    
+        #qs,#ps,#qps {
+    color: green;
+}
+    </style>
+    </head>
+    <body><details> <summary>CD</summary> 
+     
+
+       <p id="q"></p>
+        <p id="w"></p>
+        <p id="e"></p>
+        
+        <div> 
+        <center>
+            <biv>
+            <p>
+            <p id="p"></p>
+                
+                <button onclick="af()">import</button>
+                 <button onclick="bf()">erase</button>
+                 <button onclick="ef()">export</button>
+                 <button onclick="rf()">delete</button>
+            </p>
+                <div><!--
+                    <input type="button"  value="df" onclick="cd(0)" id="0">
+                    <input type="button"  value="df" onclick="cd(1)" id="1">                             
+                    <input type="button"  value="df" onclick="cd(2)" id="2">
+                    <input type="button"  value="df" onclick="cd(3)"  id="3">
+                </div>
+                <div>
+                    <input type="button"  value="df" onclick="cd(4)" id="4">
+                    <input type="button"  value="df" onclick="cd(5)" id="5">                             
+                    <input type="button"  value="df" onclick="cd(6)" id="6">
+                    <input type="button"  value="df" onclick="cd(7)" id="7">
+                </div>
+            </biv>-->
+            
+        </center>
+        <script>
+            
+var j= 0;
+var m="";
+var f;
+var  ip=0;
+var w="";
+
+var str = ["Hi","December","1","Have  a  good  mood","good  luck","and","Df","clone","2019","fuck","up"];
+
+
+
+function cd(o){
+f = document.getElementById("ch").checked;
+//document.querySelector('a').dataset.s;
+
+//alert (o)
+if (f==false){
+    
+
+    
+    var n =' _ ';
+    var u =' ';
+   
+    m = m+n+str[o];
+    w = w+u+o;
+  //  alert (m)
+    document.getElementById("q").innerHTML = m;
+    document.getElementById("w").innerHTML = w;
+   document.getElementById("e").innerHTML = '';
+}else{
+    var l = prompt();
+    str[o]=l;
+    bc(o);
+  //  document.getElementById(o).value= str[o];
+}
+}
+function bc(a){
+
+//alert (a)
+    document.getElementById(a).value= str[a];
+
+
+}
+function g(d){
+
+if (j==0){
+document.getElementById("e").innerHTML = "hi, this is a pseudo encryptor, click on a fixed button to change the input text from the buttons, what's on the buttons is in the dictionary";
+
+    j=1;
+}
+    
+    var i = str.length
+    
+var step;
+ for (step = 0; step < i; step++) { 
+// Запускается 5 раз, с шагом от 0 до 4. console.log('Идём 1 шаг на восток'); 
+bc(step);
+//document.getElementById(d).value= str[d];
+}
+}
+
+
+function up(){
+var b = str.length;
+
+cr();
+
+// @ str[b]="DF";
+//alert(str[b])
+var l = prompt();
+    str[b]=l;
+    
+    
+clonn();
+//div.insertAdjacentHTML('beforebegin', '<input type="button" value="+" id="'+a+'" onclick="up('+a+')">'); 
+    bc(b);
+//clonn();
+  if (ip==0){
+        document.getElementById("text").innerHTML = 'save your new dictionary';
+        ip=1;
+    }
+}
+
+
+
+
+function af(){
+//alert (strw[1])
+
+if ( confirm("Attention: you want to make a new dictionary this action will destroy the old")  ==true){
+cr();
+//if (ip==1){
+str='';
+str= prompt();
+str=str.split(' '); // 1,2,3,4 too  probel
+m='';
+w='';
+document.getElementById("q").innerHTML = '';
+    document.getElementById("w").innerHTML = '';
+    
+//g();
+clonn();
+}}
+//}
+function bf(){
+//m=m.replace("i","");
+//m=m.slice(0, +1);
+//if (m.length -1
+//go
+var zz = m.lastIndexOf(' _ ') ;
+var xx = m.length;
+var cc = xx-zz;
+//alert( m.indexOf("Hi",-1) );
+m=m.substring(0, m.length -cc );
+var zo = w.lastIndexOf(' ') ;
+var xo = w.length;
+var co = xo-zo;
+//alert( m.indexOf("Hi",-1) );
+w=w.substring(0, w.length -co );
+
+
+    document.getElementById("q").innerHTML = m;
+    document.getElementById("w").innerHTML = w;
+    
+}
+function ef(){
+var ee = str.toString().replace(/[\.,%]/g, ' ');//\s., probel
+//var t  = t.replace(",", '  '); 
+alert (ee)
+   document.getElementById("text").innerHTML = ee;
+}
+function rf (){
+   m="";
+   f="";
+  w="";
+    document.getElementById("q").innerHTML = m;
+    document.getElementById("w").innerHTML = w;
+   document.getElementById("e").innerHTML = '';
+}
+
+function clonn(){
+ var i = str.length
+var n = 0;
+var div = document.getElementById("clon");
+
+     // alert(s)
+      for (n = 0; n<i; n++){
+  div.insertAdjacentHTML('beforebegin', '<input type="button" value="DF" id="'+n+'" onclick="cd('+n+')">'); //div.insertAdjacentHTML('afterend', '<p>Пока</p>');
+  }
+  
+  div.insertAdjacentHTML('beforebegin', '<input type="button" value="+" id="'+"+"+'" onclick="up()">'); //
+  
+/*
+}
+}
+ 
+ function aa(step) { //button life clon
+  var wr = document.createElement('wr');
+  var wd = document.createElement('wd'); 
+//  var ww = document.createElement("div"); 
+//ww.id = 'clon'; 
+// var bw = document.createElement('input'); 
+
+ wd.innerHTML="<input type=\"button\" id='  "+step+"  ' name=" + "inmm"+ " value=" +"0" +" onclick = \" cd( ' " + step+ " ') \">"; 
+  wr.appendChild(wd); 
+//5  } 
+ document.body.appendChild(wr);
+ 
+ if (str.length==step){*/
+ g();
+  } 
+ 
+ 
+ 
+  
+
+
+
+
+
+
+setTimeout(clonn, 1000);
+var n;
+function cr(){
+
+for (n=0;n<str.length;n++){
+ var element = document.getElementById(n); element.parentNode.removeChild(element); 
+
+    }
+ element = document.getElementById("+"); element.parentNode.removeChild(element); 
+  //  alert (n)
+   // ip=1;
+     }
+
+
+
+//var  test = '123gybbrry45ybg6=789,m er+';
+ 
+/*
+var r = /[^\d\+]/g; 
+var xv =  str;
+xv = xv.replace(r, ' ');
+//xv=xv.replace( 4 , ' ' );
+   document.getElementById("e").innerHTML = xv;
+   */
+
+
+
+        </script>
+        
+      
+                
+                
+                    <textarea id="text" style="width:100%; height:100px"readonly> dictionary output </textarea>
+<button onclick=" text.select();document.execCommand('copy') ? alert('dictionary copied to clipboard') : alert('Не удалось скопировать.'); "> copy </button>
+                    <!--https://javascript.ru/forum/dom-window/12314-kak-skopirovat-v-bufer-obmena.html-->
+        
+                    
+
+            
+            
+        </div>
+        
+        <!--
+          <input type="button" value="Добавить" onclick="cr()" /> -->
+          <p id="c">
+          <input type="checkbox"   onclick=""  id="ch"  alt="sw" autofocus>change note</input>
+          <div id="clon">
+              </p>
+          </div>
+          
+          
+          <center>
+            <p>
+            <input type="text" value="their number">
+            <input type="radio" id="r" alt="ra" name="r" onchange="up(0)" checked>
+                <input type="radio" id="r" alt="ra" name="r" onchange="up(1)">
+                <input type="radio" id="r" alt="ra" name="r" onchange="up(2)">
+            </p>
+        </center>
+        </details>
+        
+        <!--zona dc-->
+        
+        <details> <summary>DC</summary>  
+        
+      <!--  <title>DF.snow© DC v1.2.1.1</title>-->
+
+            <div>
+        <center>
+    <button onclick="ssf()" autofocus >reset</button>    
+    
+    <p id="ps"></p>
+    <P>transfer</P>
+    <p id="qs"></p>
+    <p>vocabulary</p>
+     <p id="qps"></p></p>
+     <p>raw value</p>
+        <button onclick="ffs()">import code</button>
+        <button onclick="afs()">import vocabulary</button>
+         <button onclick="bfs()">match</button>
+         </center>
+         <script>
+             var tt='';
+var strx = [0,3,2];
+// var strw = ["hi","DF","december","1"];
+function ffs(){
+tt='';
+strx = prompt();
+strx=strx.split(' ');
+alert(strx); // 1,2,3,4
+}
+function afs(){
+//alert (strw[1])
+str='';
+str = prompt();
+str=str.split(' '); // 1,2,3,4
+}
+function bfs(){
+ var oo = strx.length;
+if( strx.length >0){
+var t ='';
+var o =0;
+var ttt=' ';
+ var oo = strx.length;
+    while(oo){
+        t = str[strx[o]];
+        tt = tt+ttt+t;
+       // alert (oo+tt+o+t);
+        oo--;
+        o++;
+    }
+ document.getElementById('ps').innerHTML = tt;
+document.getElementById('qs').innerHTML = str;
+ document.getElementById('qps').innerHTML = strx;
+//alert (tt);
+//alert (strw)
+}else {
+    alert ('no Array ')
+}
+}
+function ssf(){
+    document.getElementById('ps').innerHTML = '';
+    document.getElementById('qs').innerHTML = '';
+    document.getElementById('qps').innerHTML = '';
+    tt='';
+    //pipets my how bad I am (!
+}
+         </script></div>
+        
+        
+        
+        
+        
+        
+        </details>
+        <details> <summary>info</summary> 
+       <center>
+this script is intended for decryption of digital ciphers understandable with a simple eye, for decryption there should be a dictionary from the encrypted code, otherwise there is nothing to be decrypted,
+ it is also for encryption You will need your own dictionary, which can be easily inserted and removed, and transmitted to the recipient of the encrypted message! good luck 
+;)
+</details>
+          <footer><small> DC_CD By DF v 2.4.2.1</small></footer>
+    </body>
+</html>

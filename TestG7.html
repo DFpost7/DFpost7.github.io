@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <p id="one"></p>
+                <p id="ee">start</p>
+                <button id="e" onclick="go()">import</button>
+                
+                 <button id="o"  onclick="bf()">erase</button>
+            
+               <!--  <button onclick="ef()">export</button>
+                 <button onclick="rf()">delete</button>-->
+            </p>
+            <p id="to">
+                <p id="rs"></p>
+                </p>
+                <p id="l"></p>
+                <p id="too">
+                <p id="yes"></p>
+                <p id="no"></p>
+                
+            </p>
+            <script>
+                
+
+var aa = ["greh", "grehhh","grohj"];
+var b = ["vopros","voprosg"];
+var c = [];
+var t = 0;
+var tt=0;
+
+
+
+function go(){
+/*
+    var rs = document.getElementById("rs");
+    var l = document.getElementById("l");
+    var yes = document.getElementById("yes");
+    var no = document.getElementById("no");
+    
+
+    
+    
+    rs.insertAdjacentHTML('beforebegin', '<input type="button" value="reset" id="'+"x"+'" onclick="rs()">');
+    yes.insertAdjacentHTML('beforebegin', '<input type="button" value="yes" id="'+"x"+'" onclick="g(1)">');
+    no.insertAdjacentHTML('beforebegin', '<input type="button" value="no" id="'+"x"+'" onclick="g()">');*/
+    
+    
+    var too = document.getElementById("too");
+    /*
+    too.insertAdjacentHTML('beforebegin', '<p id="'+"e"+'">wl</p>');*/
+    
+    to.insertAdjacentHTML('beforebegin', '<input type="button" value="reset" id="'+"xx"+'" onclick="rs()">');
+    too.insertAdjacentHTML('beforebegin', '<input type="button" value="yes" id="'+"x"+'" onclick="g(1)">');
+    too.insertAdjacentHTML('beforebegin', '<input type="button" value="no" id="'+"x"+'" onclick="g()">');
+    
+    
+    document.getElementById("ee").innerHTML = '';
+    
+    
+//    var t;
+   // for (t=0; t<2; t++){
+var     element = document.getElementById("e"); element.parentNode.removeChild(element);
+//}
+var     elemen = document.getElementById("o"); elemen.parentNode.removeChild(elemen);
+//g();
+
+}
+
+function g(a){
+   //  var s = document.getElementById("");
+    
+    cc();
+    
+    if(a==1){
+      //star   c[t] = 1;
+    c[tt]=aa[tt];
+     tt++;
+     //alert(tt)
+    }else {
+        
+    }
+    
+    document.getElementById("l").innerHTML = b[t] ;
+    t++;
+    
+     if (b.length<t){
+// alert ('g')
+//alert (b.length )
+end();
+  } 
+ 
+    
+    
+    
+}
+
+function rs(a){
+    //t=0;
+    /*
+    var rs = document.getElementById("rs");
+    var l = document.getElementById("l");
+    var yes = document.getElementById("yes");
+    var no = document.getElementById("no");
+        var nof = document.getElementById("+");
+        */
+   // document.getElementById("ee").innerHTML = '';
+    document.getElementById("l").innerHTML = '';
+    var t;
+    
+    for (t=0; t<2; t++){
+    var     element = document.getElementById("x");
+ element.parentNode.removeChild(element);
+}
+
+    var     element = document.getElementById("xx"); element.parentNode.removeChild(element);
+    
+/* wzh****
+
+    var     elemen = document.getElementById("l"); elemen.parentNode.removeChild(elemen);
+    */
+    
+    
+    
+    
+    if(a==0){
+    one();
+}}
+
+function one(){
+
+    var     er = document.getElementById("one");
+
+   document.getElementById("ee").innerHTML = "start";
+    /*
+    er.insertAdjacentHTML('beforebegin', '<p id="'+"e"+'">start</p>');*/
+    
+    er.insertAdjacentHTML('beforebegin', '<input type="button" value="import" id="'+"e"+'" onclick="go()">');
+    er.insertAdjacentHTML('beforebegin', '<input type="button" value="erase" id="'+"o"+'" onclick="bf()">');
+    
+    c=[];
+    t=0;
+    tt=0;
+    //alert (c)
+    //alert (t)
+    
+}
+
+
+function rss(){
+    var foot;
+    var h = c.length;
+//  var  t=0;
+           for (t=0; t<h; t++){
+        
+        foot = document.getElementById(t); foot.parentNode.removeChild(foot);
+        
+        }
+        foot = document.getElementById("o"); foot.parentNode.removeChild(foot);
+        
+        
+        one();
+    
+    
+    
+}
+function end(o){
+    rs(1);
+    
+  //  if(o==0){
+    var h = c.length;
+    alert (c)
+     var t;
+     var     rrr  =  document.getElementById("one");
+     var z ='';
+    for (t=0; t<h; t++){
+    z = c[t];
+    rrr.insertAdjacentHTML('beforebegin', '<p id="'+t+'"></p>');
+    document.getElementById(t).innerHTML = z;
+    }
+    var     er = document.getElementById("too");
+    er.insertAdjacentHTML('beforebegin', '<input type="button" value="reset" id="'+"o"+'" onclick="rss()">');
+ //   }else{
+        
+   //     rss();
+        
+ //   }
+}
+
+
+
+
+var k=0;
+function mn() {
+k=0;
+ //   alert("Hi");
+}
+//setInterval(myAlert, 3000);
+
+
+function cc(){
+         k++;
+    if(k==1){
+        z()
+ //       alert ("z")
+    }
+    
+    if(k>2){
+        x();
+        document.write()
+        
+       //end(1);
+  //   rs();
+     
+      //  rss();
+        alert ("gop")
+    }
+}
+
+
+
+
+
+function x(){
+//clearInterval(t,100);
+//document.write(t);
+clearTimeout(ti); 
+//setInterval(myAlert);
+}
+function z(){
+ ti = setTimeout(() => mn(), 2000); 
+//alert(timerId); // идентификатор таймера
+// clearTimeout(timerId); 
+// alert(timerId); // тот
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+-
+function clonn(){
+ var i = str.length
+var n = 0;
+var div = document.getElementById("clon");
+
+     // alert(s)
+      for (n = 0; n<i; n++){
+  div.insertAdjacentHTML('beforebegin', '<input type="button" value="DF" id="'+n+'" onclick="cd('+n+')">'); //div.insertAdjacentHTML('afterend', '<p>Пока</p>');
+  }
+  
+  div.insertAdjacentHTML('beforebegin', '<input type="button" value="+" id="'+"+"+'" onclick="up()">'); //*/
+  
+/*
+}
+}
+ 
+ function aa(step) { //button life clon
+  var wr = document.createElement('wr');
+  var wd = document.createElement('wd'); 
+//  var ww = document.createElement("div"); 
+//ww.id = 'clon'; 
+// var bw = document.createElement('input'); 
+
+ wd.innerHTML="<input type=\"button\" id='  "+step+"  ' name=" + "inmm"+ " value=" +"0" +" onclick = \" cd( ' " + step+ " ') \">"; 
+  wr.appendChild(wd); 
+//5  } 
+ document.body.appendChild(wr);
+ 
+ if (str.length==step){
+ g();
+  } 
+ 
+ 
+ 
+  
+
+
+
+
+
+
+setTimeout(clonn, 1000);
+var n;
+function cr(){
+
+for (n=0;n<str.length;n++){
+ var element = document.getElementById(n); element.parentNode.removeChild(element); 
+
+    }
+ element = document.getElementById("+"); element.parentNode.removeChild(element); 
+  //  alert (n)
+   // ip=1;
+     }
+
+
+
+//var  test = '123gybbrry45ybg6=789,m er+';
+ 
+/*
+var r = /[^\d\+]/g; 
+var xv =  str;
+xv = xv.replace(r, ' ');
+//xv=xv.replace( 4 , ' ' );
+   document.getElementById("e").innerHTML = xv;
+   */
+
+
+
+            </script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!-- Created by Fredericks-->
+
+<!--Fredericks "Sage" Challenge Completed Code-->
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Trailing Flame Ball</title>
+   <style type="text/css">
+   h1{
+    color: #eff;
+    text-align: center;
+    font-family: cursive;
+}
+   
+        body{
+        
+             background: #001122;
+             overflow: hidden;
+             padding: 0;
+             margin: 0;
+         }
+        canvas{
+            position: absolute;
+            z-index: -1;
+        }
+   </style>
+</head>
+<body>
+<canvas></canvas>
+<h1>Made By Frederick "Sage"</h1>
+<script>
+    var c = document.querySelector("canvas"),
+        cc = c.getContext("2d"),
+        hollow = vaccumm = [],
+        bench = 15,
+        w = c.width = window.innerWidth,
+        h = c.height = window.innerHeight;
+        var pos = {X: w/2, Y: h/2};
+
+function mouseMove(e){
+    pos.X = e.clientX - c.offsetLeft || e.changedTouches[0].clientX - c.offsetLeft;
+    pos.Y = e.clientY - c.offsetTop || e.changedTouches[0].clientY - c.offsetTop;
+}
+
+    window.addEventListener("mousemove", mouseMove, false);
+    window.addEventListener("touchstart", mouseMove,false)
+
+    function FlameBall(x,y){
+            this.x = x;
+            this.y = y;
+            this.vy = rand(5,10);
+            this.s = rand(1,6);
+            this.done = false;
+            this.alpha = 1;
+            this.r = 220;
+            this.g = 0;
+            this.b = 0;
+            this.tug = this.alpha <= 0.5 ? -7 : 7;
+
+        this.draw = function(){
+            cc.fillStyle = "rgba("+this.r +","+ this.g+","+this.b + ","+this.alpha+")";
+            cc.beginPath();
+            cc.arc(this.x,this.y,this.s,0,Math.PI*2,true);
+            cc.fill();
+            cc.closePath();
+        }
+    this.update = function(){ 
+        this.vy *= 0.99; 
+        this.x += rand(-5,5); 
+        this.y -= this.vy; 
+        this.r += this.tug; 
+        this.g += 12.75; 
+        this.b += 4; 
+        this.alpha -= 0.05; 
+        this.s += rand(0.05,0.1); 
+        
+        if(this.alpha <= 0 ) { 
+            this.done = true; 
+        } 
+     } 
+ } 
+ 
+ function render(){ 
+   for (var i = 0; i < bench; i++) { 
+     var flame = new FlameBall(pos.X,pos.Y);
+     hollow.push(flame);
+   } 
+   cc.fillStyle = "rgba(0,0,0,0)";
+   cc.clearRect(0,0,w,h); 
+   for (var i = 0; i < hollow.length; i++) { 
+   hollow[i].draw(); 
+   hollow[i].update(); 
+   if (hollow[i].done){ 
+     hollow.splice(i,40); 
+   } 
+  } requestAnimationFrame(render); 
+}render();
+
+function rand(a,b) { 
+     return Math.floor((Math.random() * (b-a) + 1) + a); 
+    } 
+</script> 
+<script>
+    
+alert("Delivered as Promised.\nOn mobile, just touch the screen, on PC, mouse move is your baby. In either case, the previous  \"Fire\" will be reduced to \"Flames\".\n\nAs usual, lemme know what you think about the Code.");
+</script>
+</body> 
+</html>
+    
+    
+    

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>bit shift</title>
+    </head>
+    <body>
+        <button onclick="egoist()">up</button>
+        <button onclick="ufo(1)">up+</button>
+        <button onclick="ufo()">dw-</button>
+        <h1>
+        <p id="go">0</p>
+                <p id="gooo">0</p>
+        <p id="goo">0,0,0,0</p>
+                <p id="ge">0,0,0,0</p>
+                <p id="gl">0,0,0,0</p>
+                 <p id="gp">0,0,0,0</p>
+        </h1>
+        <script>
+            var upp=0;
+var speed=1000;
+var a = 0;
+var d = 0;
+var c = 0;
+var b = 0;
+var n = 0;
+var z ="";
+var y="";
+var x="";
+var w="";
+var up=0;
+var A ="";
+var B="";
+var C="";
+var D="";
+var i=0, t=0, r=0, e=0, p=0, k=0, g=0, m=0, v=16;
+var moron= ["A","B","C","D","E","F"];
+var  hypocrite=[];
+var hipo=[];
+var hipa=[];
+var hipao=[];
+function egoist(){
+    
+    if (a==0){
+        a=1;
+        z="1";
+        i++;
+    }else{
+    a=0;
+            if (d==0){
+       // a=0;
+        z="0";
+        y="1";
+        t++;
+        d=1;
+        
+                }else{
+                d=0;
+            if (c==0){
+            r++;
+        c=1;
+        
+      //  d=0;
+        y="0";
+        x="1";
+    }else{
+    c=0;
+        if (b==0){
+       // c=0;
+        b=1;
+        x="0";
+        w="1";
+        e++;
+    }else{
+        w="0";
+        b=0;
+    }
+    }
+    }
+    }
+    up++;
+    hypocrite[0]=a;
+    hypocrite[1]=d;
+    hypocrite[2]=c;
+    hypocrite[3]=b;
+    hipo[0]=i;
+    hipo[1]=t;
+    hipo[2]=r;
+    hipo[3]=e;
+    n=z+y+x+w;
+    document.getElementById("go").innerHTML = n;
+    document.getElementById("goo").innerHTML = hypocrite;
+    document.getElementById("ge").innerHTML = hipo;
+
+    if (up<10){
+        document.getElementById("gooo").innerHTML = up;
+    }else{
+    
+        document.getElementById("gooo").innerHTML = moron[upp];
+       upp++;
+        if (up==15){
+            up=0;
+            upp=0;
+          //  document.getElementById("gooo").innerHTML = 0;
+        }
+        
+    }
+    
+    
+    
+    
+    p++;
+    
+    if (p==v){
+    p=0;
+        k++;
+        if(k==v){
+            k=0;
+            g++;
+            if(g==v){
+                g=0;
+                m++;
+                if(m==v){
+                    m=0;
+                    v++;
+                }
+            }
+        }
+    }
+        
+    hipa[0]=p;
+    hipa[1]=k;
+    hipa[2]=g;
+    hipa[3]=m;
+    document.getElementById("gl").innerHTML = hipa;
+    
+    //document.getElementById("gp").innerHTML = hipao;
+    
+    }
+
+alert("bit shift test version");
+
+function ufo(ss){
+    
+    if(ss==1){
+        speed=speed+100;
+    }else{
+        speed=speed-100;
+    }
+}
+
+
+
+setInterval(function() {egoist() }, speed);
+        </script>
+    </body>
+</html>

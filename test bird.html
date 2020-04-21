@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>Go > Test "What kind of bird are you?"</title>
+
+	 <meta charset="UTF-8">
+  <!--<label> <input type="radio" name="Name" id="" value="" class=""/> Да </label>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+-->
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+
+<div class="width=100% height=100% align-left"></div><div class="width=100% height=100% align-left"></div><div class="align-left"></div>
+
+
+	<div class="conteneur">
+		
+		<div class="header">
+			
+
+
+
+<span class="header-title">DFpost.ru
+
+</span><br />
+			<span class="header-title-two">Go > Test "What kind of bird are you?
+
+</span>
+	
+
+
+
+
+
+
+	</div>
+
+		<div class="menu">
+			<ul class="menu-list">
+				<li><a href="">Webing</a></li> 
+				<li><a href="">Standard</a></li> 
+				<li><a href="">Validation</a></li> 
+				<li><a href="">Design</a></li> 
+				<li><a href="">Info</a></li> 
+				<li><a href="">Forest</a></li> 
+				<li><a href="">Beautiful</a></li> 
+				<li><a href="">Best</a></li> 
+				<li><a href="">More</a></li> 
+			</ul>
+	
+
+
+
+
+
+
+
+
+	</div>
+
+		<div class="centre">
+			<h3>Welcome</h3>
+	
+
+<br>
+
+
+<p id="b2"><p id="bb2">Go > Test "What kind of bird are you?"</p></p>
+        <div id="d1"><p id="p1"></p></div>
+        <div id="d2"><p id="p2"></p></div>
+        <div id="d3"><p id="p3"></p></div>
+        <div id="d4"><p id="p4"></p></div>
+        <p id="b5"><h3></h3></p>
+        <p id="b6"></p>
+        <p id="b7"></p>
+        <p id="pp0"></p>
+        <p id="pp1"></p>
+        <p id="pp2"></p>
+        <p id="pp3"></p>
+        <p id="pp4"></p>
+        <p id="pp5"></p>
+                
+        
+        <p id="b0"><button id="bb0" onclick="go(8)">go</button></p>
+        <p id="b1"><button id="bb1" onclick="help()">help</button></p>
+       <button id="bb3" onclick="leng()">l</button>
+       <script>
+           
+//zona input base
+var len=["Test What kind of bird are you?","start","help","language","dove","ostrich","hawk","no icon","tired","next","from everyone a little bit","between two"," not so fast!"," What does the test show? With the help of the test, you can relate yourself to three quite different and bright personal portraits, called conditionally Dove","Ostrich and Hawk"];
+
+
+
+ 
+
+var den=["are you ready?","You are 12 years old, you are going for a walk, and my mother suddenly says: it Is late, you will not go anywhere. You:?","In case of disagreement, I usually:?","I imagine myself as a person who :?", "My attitude to romantic love:?","If I'm upset, I:?", "If the boss unfairly criticized my work, then:?", "If someone pricks me with my fault, then I:?","I perform best when I:","If I have finished some difficult work, I:?","at parties, I usually:?", "If the cashier or waiter does not give me change, I will:?","If I feel angry, I:?","When I get sick:?","If some person has caused my indignation, I prefer :?", "My motto is likely to be:"];
+
+var gen=["Yes","very-very ask mom to let him go, but if she insist, then stay at home.","listen carefully to the opinions of others and try to find a way of mutual consent;","loves to please many and be all like;","to be with the one you love is the greatest schaste in life;","try to find someone who'd comfort me;","I will disturb, I will actively defend;","this is probably gonna get pissed and respond in kind;","leader, team principal;","show everyone what I have done;","strive to be at the center of all events;","do not pay attention - a trifle is not worth it.","trying to calm down.","try not to pay attention to it and hope that it will do and all around.","to let him know about it indirectly, such as through other people.","Keep it coming"];
+
+
+
+var sen=["no"," tell yourself: And I never want to go and stay at home.","avoid useless disputes and trying to get his in other ways;","always remains himself;","that's nice, but is you do not require too much and not climb into the soul;","try not to pay attention to it;","I am upset, but I'll take what he's right, and try to correct these mistakes.","I get upset and start making excuses.", " part of the team.", "I want to be praised.","I spend most of my time helping my hosts.", " naturally, I will demand it;","I Express my feelings and get rid of them;","I become irritable and impatient;", " Express my feelings openly and to my face;","The winner is always right;"];
+
+
+
+var cen=["I don't know","tell me: It's not too late, I'll go, although the mother then will swear.","openly Express their views and try to convince the interlocutor.","likes to subjugate others to his will.","that's fine, especially if it gives me everything I need.","getting angry and can wear on others.","me it would hurt, but I'll try not to show it;","get annoyed and keep quiet about the offense inside;","by himself;","just turn to another thing;","sit quietly in the corner;","upset, but say nothing - I feel uncomfortable;","feel uncomfortable;","go to bed and expect that I will begin to care;","to discharge their emotions in any outside business or conversation;","The whole world loves loving;"]
+
+
+
+
+var ten=["You are a soft and sensitive person. You need love, and your happiness and security depend on it. You are ready to do anything for others - and most often do what you secretly want from others; you rarely decide to ask or demand what you need directly. More often you play secondary roles, contributing to the rise of others, because you feel better behind the throne, not on it. You suffer from small things, sometimes superstitious. Easy to communicate and peaceful, you often have a calming effect on temperamental and aggressive people. Perhaps you often catch a cold, lose things and purses, cut your fingers or injure yourself in other ways.", " You are a cold, calculating, cautious person, prefer to keep your distance from everything. You are uncomfortable if someone comes too close to you, if possible, limit physical contact. You prefer not to get attached to anything or anyone very much - there is no need for extra obligations, and the break of attachment can be painful. If you are rejected - well, so much the worse for this person. You don't expect too much from people and life - so you don't get too disappointed. You believe that there is no need to show your emotions, and in General, emotions interfere with doing business.", "You are ambitious, determined and brave. In any situation, you pursue your goals, work harder than others. In the process of achieving the goal, you can acquire a lot of enemies, but this does not frighten you. You need submission, loyalty, and admiration from others. You strive for perfection, are uncompromising, and demand everything or nothing. You have a lot of energy, you are a natural strategist. It is easy to criticize yourself and others, but if you are criticized, you do not take it well. The world for you is a battleground on which you simply have to win - otherwise you will be defeated."];
+
+var hhen=["Test What kind of bird are you?» - recommendations for those who passed the test the Author of the test, Foreword and recommendations-psychologist Nikolai Ivanovich Kozlov. The test is taken from the book   how to treat yourself and people or practical psychology for every day'. Explanations for passing the book version of the test are excluded from this article. Tests are loved by everyone or almost everyone, but most people answer questions only in order to find out the result and evaluate — no, not themselves, but the test: how accurately the test guessed what a person knew about themselves and without it... Yes, tests help a person to think about themselves again, look at their features a little from the outside, but the main function of popular tests is entertainment. Test What kind of bird are you?» — not boring, but Dan is here for other purposes. I am afraid that someone will start to perceive the above rules and recommendations too directly, without relating to their own characteristics and their personal situation. The test also helps you understand that there are no General recommendations, that the quality that adorns one person may interfere with another. Swearing, for example, is clearly not good. But I had to teach a few people to swear because they couldn't. And they, in their situation, needed it. So, when Answering questions, you should choose one of the three answers. If you have any doubts, just choose the answer that suits you best. This or that answer does not say that you are better or worse, but simply that you are one or the other. copied by the Author: Viktor Guberniev Source: http://nkozlov.ru/tests_fan/d2715/ © Shkolazhizni.ru"]
+
+var oen=["If you want to change… This test gives only one possible cross-section of your personality, but we hope that it will help you better understand some of your characteristics. It is not so important which features are more pronounced in you — a Dove, an Ostrich or a Hawk, it is important that you once again look at yourself as if from the outside. Apparently, you are not satisfied with everything in yourself. If you decide to change, be prepared for situations of discomfort — this is an inevitable stage in the growth process. Agreeing to change is like agreeing to an operation: you will be in pain for a while, but you will be free of the old disease. The following exercises can help you get rid of the weak, undesirable sides of your personality, develop your strengths. You may think that some tasks develop negative qualities: why train them? There is confusion: you are asked to develop skills, not qualities. Qualities are forever, and skills are only when needed. Should I be able to beat? To beat is not necessary, but to be able to beat is sometimes very necessary…"]
+
+
+
+var wen=["What the Pigeon needs is a Diagnosis and General prescriptions. You need to grow up and become more independent, start living your own life, often against the expectations or requests of others. You need to learn to be a person for yourself, not a person for others. You have the right to be yourself. You need to allow yourself a lot of things that are still internally forbidden for you. This does not mean that you should become a bad person, but the good that is so much in you should be protected. Exercises: 1. Exercise No-smile. A smile is beautiful, it always makes you beautiful. But you are also caught on a smile: you smiled-so you said Yes. Are you sure that this is always the correct answer? To become a freer person, learn not to smile in response to a smile addressed to you. Allow yourself to be both gloomy and serious. 2. Exercise No. It is difficult for you to say No — you do not want to upset the person, because he may be offended or angry with you. Now, you must learn to say No calmly and decisively. First, you have the right to do this, and second, such a No is perceived normally. 3. Exercise Capture the initiative. Learn to take the initiative in conversation and business. 4. Exercise non-Standard actions. You are too dependent on the opinions of others and are afraid to go beyond the standard (like everyone) behavior. Allow yourself any reasonable but unconventional actions. At the bus stop, it is customary only to stand quietly, but you are cold — jump or do exercises. Will people look at you as if you're crazy? — Firstly, they are wrong, and secondly, what do you care about their views and assessments? 5. Exercise Is Lip. If the disapproving views of others are maintained by you still with difficulty, you need to train your mental stability. On the street or in transport, lift your upper lip slightly, exposing your gums and teeth, and your face will begin to acquire an unpleasant expression. Allow yourself to be with such an ugly, unpleasant face. The exercise is good because you can adjust the tension levelhere. If it becomes difficult, lower your lip; if you don't feel any tension, lift your lip higher... 6. Exercise I Will give you an assessment. This exercise will make it easier for you to complete the previous tasks, and will make you more internally free. In life and communication, learn not to be evaluated, but to evaluate. Don't wait for them to evaluate you — shoot the rating first yourself. When performing non-standard actions, observe the various reactions of others (not all of them will be adequate and smart). Made a mistake and let someone down — do not worry, but watch how (right, no? smart, no?) this person will respond to your mistake. 7. Exercise Freedom of negative emotions. You are afraid to hurt or upset others with your inappropriate (especially negative) emotions. This is a kind concern, but it is you who need to get rid of this fear. Whatever your emotions are, you have a right to them. More often, more freely Express your negative emotions to others or just to space. 8. Exercise Freedom of voice and opinion. Learn to speak loudly and confidently, often Express yourself categorically. 9. Exercise Freedom of accusation. Learn not to justify yourself in response to accusations, but to immediately launch a counterattack and counter-accuse yourself. Or don't wait for people to start attacking you: start with the accusations yourself. 10. Exercise  Restore order!. Make it a rule to restore order in stores and other service services where the service is not yet available. Allow yourself to make comments to employees of trade and household services (it does not matter whether they are effective or not).", "What the Ostrich needs a Diagnosis and General prescriptions. Your coldness, which worsens contacts with people and restricts the perception of all the colors of the world, is not natural, but only the result of your fear of connections and experiences. Yes, it can be painful to live, but this is not a reason not to live at all. And what was so painful in childhood and youth is no longer terrible now. Try to open yourself to the world, and the world will open itself to you! Your main task is to develop interest and attention to people around you, learn to better understand and feel them. Exercises: 1. Exercise Associations. This is a well-known game in the company, when one goes out, and someone makes a guess. The guesser should ask abstract questions (for example, What is the household item?), and the responder should think about the riddled person, trying to associate their answer with it. 2. Exercise Remembering faces. Develop the habit of remembering the faces of people around you. We looked, closed our eyes, and tried to reconstruct everything visibly, in detail. If you can't see something, then look again so that the memory is complete. 3. Exercise How does he laugh?» Looking at the faces, try to visualize: How does this person laugh or cry? How is it explained in love? How confused is he? How does he cheat, try to get out? How rude is he? Swearing? How is he offended? What he was like when he was three years old (just visually-see?) What will it be like in old age (see?) 4. Exercise What is it?» In the company of friends, where there is chatter and entertainment, switch off from the fuss, listen to others in silence and try to understand: Why, why does this person say or do this — and so on? What is he doing? Is he really that cheerful, or is he just pretending to be? Is she silent or interested? He portrays a jester — why? 5. Exercise I am through the eyes of others. In different situations and with different people, try to look at yourself through the eyes of your interlocutor. What impression do you make? What does he think of you? 6. The Exercise Of Empathy. In a conversation on personal topics that touch the interlocutor, try to actively and interestedly (not externally, but internally) listen to him, not taking the initiative and not rejecting, but empathizing and trying to put yourself in his place. 7. The Exercise Of Reincarnation. Try to feel yourself in the other person's place. Imagine that he is you. Put yourself in his place, get into his appearance, get into his inner world. Reproduce his landing, gait, facial expressions, movements. Reincarnate-try to feel his feelings and think his thoughts. 8. in companies, more often get out on the role of a mass entertainer. It doesn't work - уч learn.","What the Hawk needs Diagnosis and General prescriptions. When you see enemies around you, you can't help turning even those who might have been your friends into them. You turn potential like-minded people into your competitors against their will. To prevent this from happening, you must learn to be more tolerant and friendly. Exercises: 1. Exercise Smile. You have to accustom himself to the fact that the usual expression on your face was warm, friendly smile. If it is not there, you must be ready for it. There should always be an inner smile. 2. Exercise Peace to you. The first phrase (internal phrase, setting) when meeting with any person you should have  Peace be with you!. Give it to him with all your heart and soul! Leaving the house in the morning, throw it to the sky, birds, trees! You can hug a nice tree. If you start arguing or swearing with someone, remember and repeat every 3 minutes: Peace be with you! - this will help you stop. Many people prefer (and just save) another internal phrase, namely: Good. Whatever happens, every five minutes, say to yourself with an inner smile: Good!. You are shouted at - Good. You shout Goodtoo. After a while, no one will want to scream anymore, and the shower will become light and warm. 3. Exercise Transfer of initiative. More often, give the other person the initiative in the conversation. Let the conversation be about what he wants, and how he wants it. 4. Exercise self-Assessment. More often you become the evaluator, not the evaluator. How do others feel around you? Are they comfortable with you and around you? If someone made a mistake, pay attention not to this fact, but to your reaction in this situation. 5. Exercise Pleasant conversation. If the question is not too fundamental (by the way, learn to evaluate it this way more often), try to make the conversation just pleasant. Whether the other person is right or wrong, stupid or not-make it so that they feel good with you. 6. Exercise Cloud in your pants. Learn to speak less, quieter, and softer. Try to agree and not to argue. Say Yes more often than No. Avoid categorical phrases and intonations. 7. Exercise Compliments and gratitude. Use any convenient opportunity to tell a person something good about them and their actions. All that you like about a person, Express it with your eyes, smile, and, of course, words. Allow yourself to admire: You look great today!» Thank you from the bottom of my heart, this is just amazing!» The main thing is that it is sincere, and it depends only on you. 8. Exercise Thunderstorm canceled. Learn to control your negative emotions. It's hard for you to contain them, and it's hard for others to bear them. Learn not to swear. Is it not weak to forgive everyone for a whole week, accept everything with understanding, do not criticize or make comments, do not condemn, do not swear? If a week is weak, how much is not weak? 9. Exercise Wise Man. Learn wisdom, a contemplative view of life, and the ability to lose. Your loss is your new experience and an opportunity to learn from it. Whatever happens, before you get angry or upset, ask yourself, How would a wise person feel about this?»"];
+var ben=["What the Dove needs to know", "what the Ostrich needs to know","What the Hawk needs to know"];
+var imgs=["https://github.com/DFpost7/DFpost7.github.io/raw/master/Screenshot_20191211-122853.png","https://github.com/DFpost7/DFpost7.github.io/raw/master/Screenshot_20191216-213456.png","https://github.com/DFpost7/DFpost7.github.io/raw/master/Screenshot_20191216-214345.png","https://github.com/DFpost7/DFpost7.github.io/raw/master/Screenshot_20191217-222854.png","https://github.com/DFpost7/DFpost7.github.io/raw/master/Screenshot_20191218-094920.png","https://github.com/DFpost7/DFpost7.github.io/raw/master/Screenshot_20191226-220503.png","https://github.com/DFpost7/DFpost7.github.io/raw/master/Screenshot_20191229-005427.png"];
+//temporary replacement of regional pictures, screenshots from the summer game
+
+var lru=["Тест «Что вы за птица?»","старт","помощь","язык","голубь","страус","ястреб","нет значку","надоело","далее","ото всех по чуть чуть","между двумя","не так же быстро!","Что показывает тест? С помощью теста вы можете соотнести себя с тремя достаточно разными и яркими личностными портретами, названными условно «Голубь», «Страус» и «Ястреб»."];
+var dru=["вы готовы","Вам 12 лет, вы собираетесь гулять, а мама вдруг заявляет: Уже поздно, никуда не пойдешь. Вы:","В случае разногласий я обычно:","Я представляю себя человеком, который :","Мое отношение к романтической любви:","Если я расстроен, то я:","Если начальник несправедливо раскритиковал мою работу, то:","Если кто-то уколет меня моим недостатком, то я:","Я лучше всего действую, когда я:","Если я закончил какую-то сложную работу, я:","На вечеринках я обычно:","Если кассир или официант недодаст мне сдачу, то я:","Если чувствую, что злюсь, я:","Когда я заболеваю:","Если какой-то человек вызвал мое возмущение, то я предпочту :","Мой девиз, скорее всего, будет:"];
+var gru=["да","очень-очень попросите маму, чтобы пустила, но если она будет настаивать на своем, то останитесь дома.","внимательно прислушиваюсь к чужому мнению и стараюсь найти возможность взаимного согласия;","любит нравиться многим и быть как все;","быть рядом с любимым человеком - величайшее счасьте в жизни;","постараюсь найти кого-нибудь, кто бы меня утешил;","меня это возмутит, я буду активно защищаться;","наверное, разозлюсь и отвечу тем же;","лидер, руководитель команды;","показываю всем, что я уже сделал;","стремлюсь быть в центре всех событий;","не обращу внимания - мелочь этого не стоит.","пытаюсь себя утихомирить.","стараюсь не обращать на это внимания и надеюсь, что это же будут делать и все окружающие.","дать ему понять об этом косвенно, например через других людей.","Тише едешь - дальше будешь"];
+var sru=["нет","скажите себе: А я никуда и не хочу идти и останитесь дома.","избегаю бесполезных споров и пытаюсь добиться своего другими путями;","всегда остается самим собой;","это неплохо, но пока от тебя не требуют слишком много и не лезут в душу;","стараюсь не обращать на это внимания;","я огорчусь, но приму то, в чем он прав, и постараюсь эти ошибки исправить.","расстраиваюсь и начинаю оправдываться.","часть команды.","хочу, чтобы меня похвалили.","провожу большую часть времени, помагая хозяивам.","естественно, ее потребую;","выражаю свои чувства и освобожусь от них;","делаюсь раздражительным и нетерпеливым;","выразить свои чувства открыто и в лицо;","Победитель всегда прав;"];
+var cru=["незнаю","скажите: Ничего не поздно, я пойду, хотя мама потом и будет ругаться.","открыто выражаю свою позицию и стараюсь переубедить собеседника.","любит подчинять других своей воле.","это прекрасно, особенно если она дает мне все, что мне нужно.","начинаю злиться и могу разрядиться на окружающих.","меня это заденет, но я постараюсь этого не показывать;","раздражаюсь и молчу, переживаю обиду внутри себя;","сам по себе;","просто перехожу к другому делу;","тихо сижу в углу;","расстроюсь, но промолчу - мне неудобно;","чувствую себя неудобно;","ложусь в постель и жду, что за мной начнут ухаживать;","разрядить свои эмоции в каком-либо постороннем деле или разговоре;","Весь мир любит любящего;"];
+
+var tru=["Вы мягкий и чувствительный человек. Вы нуждаетесь в любви, от нее зависит ваше счастье и безопасность. Вы готовы сделать все для других - и чаще всего делаете то, что втайне сами хотите от окружающих; прямо попросить или потребовать то, что вам нужно, вы редко решаетесь. Чаще играете второстепенные роли, способствуя подъему наверх других, потому что лучше чувствуете себя за троном, а не на нем. Вы страдаете от мелочей, иногда суеверны. Легкий в общении и миролюбивый, часто вы успокаивающе действуете на темпераментных и агрессивных людей. Возможно, вы часто простужаетесь, теряете вещи и кошельки, режете пальцы или травмируетесь другими способами.","Вы человек холодный, расчетливый, осторожный, предпочитаете держаться от всего на расстоянии. Вам некомфортно, если кто-то подходит к вам слишком близко, по возможности ограничиваете физические контакты. Вы предпочитаете ни к чему и ни к кому не привязываться сильно - зачем лишние обязательства, да и разрыв привязанности может быть болезненным. Если вас отвергают - что ж, тем хуже для этого человека. Вы не ждете от людей и жизни слишком многого - поэтому и не бываете слишком разочарованы. Вы считаете, что ни к чему показывать свои эмоции, да и вообще эмоции мешают делать дело.","Вы честолюбивы, решительны и храбры. В любой ситуации вы преследуете свои цели, работаете больше, чем окружающие. В процессе достижения цели вы можете приобрести много врагов, однако это вас не пугает. Вам нужны от других подчинение, преданность, восхищение. Вы стремитесь к совершенству, бескомпромиссны, требуете -все или ничего-. У вас масса энергии, вы прирожденный стратег. Легко критикуете себя и других, однако если критикуют вас, вы плохо это переносите. Мир для вас - поле битвы, на котором вы просто обязаны победить - иначе победят вас."];
+
+var hhru=["Тест «Что вы за птица?» - рекомендации для прошедших тест Автор теста, предисловия и рекомендаций — психолог Николай Иванович Козлов. Тест взят из книги «Как относиться к себе и к людям или практическая психология на каждый день». Из данной статьи исключены пояснения для прохождения книжного варианта теста. Тесты любят все или почти все, но большинство отвечает на вопросы лишь для того, чтобы, узнав результат, оценить — нет, не себя, а тест: насколько тест точно угадал то, что человек знал о себе и без него… Да, тесты помогают человеку еще раз задуматься о себе, посмотреть на свои особенности немного «со стороны», но основная функция популярных тестов — развлечение. Тест «Что вы за птица?» — не скучный, но дан здесь с другими целями. Я боюсь, что кто-нибудь начнет воспринимать изложенные выше правила и рекомендации слишком прямолинейно, не соотнеся со своими особенностями и своей личной ситуацией. Тест же помогает понять, что нет общих рекомендаций, что качество, украшающее одного человека, может мешать другому. Ругаться, например, явно нехорошо. Но нескольких людей мне пришлось учить ругаться, потому что они это не умели. А им, в их ситуации, это было необходимо. Итак, Отвечая на вопросы, следует выбрать из трех ответов один. Если у вас есть сомнения, выберите просто наиболее под-ходящий для вас ответ. Тот или иной ответ не говорит о том, что вы лучше или хуже, а просто о том, что вы тот или иной. скопировано Автор: Виктор Губерниев Источник: http://nkozlov.ru/tests_fan/d2715/ © Shkolazhizni.ru"];
+
+var oru=["Если вы хотите меняться… Этот тест дает только один из возможных «срезов» вашей личности, но, надеемся, с его помощью вы лучше поняли некоторые свои особенности. Не так важно, какие черты в вас больше выражены — Голубя, Страуса или Ястреба, важно то, что вы еще раз взглянули на себя как бы со стороны. Видимо, не все вас в себе удовлетворяет. Если вы решили меняться, будьте готовы к ситуациям дискомфорта — это неизбежный этап в процессе роста. Согласие на изменение похоже на согласие на операцию: вам будет некоторое время больно, но зато вы освободитесь от старой болезни. Следующие упражнения могут помочь вам освободиться от слабых, нежелательных сторон вашей личности, развить ваши сильные стороны. Вам может показаться, что некоторые задания вырабатывают отрицательные качества: зачем же их тренировать? Тут путаница: вам предлагается выработать умения, а не качества. Качества — это навсегда, а умения — только когда надо. Надо ли уметь «бить»? «Бить» — не надо, а «уметь бить» — бывает очень даже необходимо…"]
+
+
+
+var wru=["Что нужно Голубю Диагноз и общие предписания. Вам нужно взрослеть и становиться более самосто-ятельным, начинать жить своей жизнью, зачастую вопреки ожиданиям или просьбам окружающих. Нужно учиться быть человеком для себя, а не человеком для других. Вы имеете право быть самим собой. Вам надо разрешить себе многое из того, что пока для вас внутренне недозволено. Это не значит, что вы должны становиться плохим человеком, но то доброе, которого в вас так много, должно быть надежно защищено. Упражнения: 1. Упражнение «Не-улыбка». Улыбка — это прекрасно, она всегда вас красит. Но вас и «ловят» на улыбку: вы улыбнулись — значит, сказали «Да». А вы уверены, что это всегда самый правильный ответ? Чтобы стать «более свободным» человеком, научитесь не улыбаться в ответ на улыбку, обращенную к вам. Разрешите себе быть и сумрачным, и серьезным. 2. Упражнение «Нет». Вам трудно говорить «Нет» — вы не хотите огорчать человека, ведь он может обидеться или рассердиться на вас. Так вот, вы должны научиться говорить «Нет» спокойно и решительно. Во-первых, вы имеете на это право, во-вторых, такое «Нет» воспринимается нормально. 3. Упражнение «Захват инициативы». Учитесь захватывать инициативу в разговоре и делах. 4. Упражнение «Нестандартные поступки». Вы слишком зависимы от мнений окружающих людей и боитесь выйти за рамки стандартного («как все») поведения. Разрешите себе любые разумные, но нестандартные поступки. На автобусной остановке принято только спокойно стоять, но вам холодно — попрыгайте или сделайте зарядку. Окружающие будут смотреть на вас как на ненормального? — Во-первых, они не правы, а, во-вторых, какое вам дело до их взглядов и оценок? 5. Упражнение «Губа». Если неодобрительные взгляды окружающих выдерживаются вами все-таки с трудом, надо тренировать свою психическую устойчивость. На улице или в транспорте немного приподнимите верхнюю губу, обнажая десны и зубы, и ваше лицо начнет приобретать неприятное выражение. Разрешите себе быть с таким некрасивым, неприятным лицом. Упражнение хорошо тем, что вы здесь можете регулировать «уровень напряжения». Станет тяжело — губу приспустите; а не чувствуете напряжение — приподнимите губу выше… 6. Упражнение «Подарю тебе оценку». Это упражнение облегчит вам и выполнение предыдущих заданий, и сделает вас более внутренне свободным. В жизни и общении учитесь быть не оцениваемыми, а оценивающими. Не ждите, пока оценят вас, — выстреливайте оценкой первым сами. Совершая нестандартные поступки, наблюдайте за разнообразными реакциями окружающих (далеко не все из них будут адекватны и умны). Сделали ошибку и кого-то подвели — не переживайте, а понаблюдайте, как (правильно, нет? умно, нет?) на вашу ошибку отреагирует этот человек. 7. Упражнение «Свобода отрицательных эмоций». Вы боитесь своими неуместными (особенно отрицательными) эмоциями задеть или огорчить окружающих. Это добрая забота, но именно вам нужно от этой боязни избавиться. Какие бы ни были ваши эмоции, вы имеете на них право. Чаще, свободнее выражайте свои отрицательные эмоции в адрес окружающих или просто в пространство. 8. Упражнение «Свобода голоса и мнений». Учитесь говорить громко и уверенно, чаще высказывайтесь категорично. 9. Упражнение «Свобода обвинений». Учитесь в ответ на обвинения не оправдываться, а немедленно переходить в контратаку и встречно обвинять самому. А то и вовсе не ждите, когда начнут нападать на вас: начинайте с обвинений сами. 10. Упражнение «Наведите порядок!». Возьмите себе за правило наводить порядок в магазинах и других службах сервиса, где сервиса пока нет. Разрешите себе делать замечания работникам торговли и службы быта (не важно, будут они эффективны или нет).","Что нужно Страусу Диагноз и общие предписания. Ваша холодность, ухудшающая контакты с людьми и ограничивающая восприятие всех красок мира, — не природная, а лишь следствие вашей боязни связей и переживаний. Да, жить бывает больно, но это еще не повод, чтобы не жить вообще. И то, что было так болезненно в детстве и юности, уже не страшно сейчас. Попробуйте открыть себя миру, и мир откроет себя вам! Ваша главная задача — развивать в себе интерес и внимание к окружаю-щим людям, научиться их лучше понимать и чувствовать. Упражнения: 1. Упражнение «Ассоциации». Это известная игра в компании, когда один выходит, а кого-то загадывают. Отгадчик должен задавать «абстрактные» вопросы (например, «Какая вещь домашнего обихода?»), а отвечающий должен думать о загаданном человеке, стараясь ассоциативно связать с ним свой ответ. 2. Упражнение «Запоминание лиц». Выработайте в себе привычку запоминать лица окружающих вас людей. Посмотрели, закрыли глаза, попробовали восстановить все зримо, в деталях. Не получается, что-то «не видите» — смотрите снова, чтобы запоминание было полным. 3. Упражнение «А как он смеется?» Глядя на лица, постарайтесь зрительно представить: «А как этот человек смеется или плачет? Как он объясняется в любви? Каков он растерянный? Как он хитрит, старается „выкрутиться“? Как он грубит? Ругается? Каков он обиженный? Каким он был в три года (чисто зрительно — видите?) Каким он будет в старости (видите?)» 4. Упражнение «А что это он?» В компании друзей, где идет треп и развлечения, выключитесь из суеты, молча послушайте других и постарайтесь понять: «Почему, зачем вот этот человек говорит или делает это — и так? Чего это он? Он действительно так весел или только прикидывается? Она молчит — интересничает? Он изображает шута — зачем?» 5. Упражнение «Я глазами других». В различных ситуациях и с разными людьми постарайтесь посмотреть на себя глазами вашего собеседника. Какое впечатление вы производите? Что он думает о вас? 6. Упражнение «Сопереживание». В разговоре на личные, трогающие собеседника темы постарайтесь активно и заинтересованно (не внешне, а внут-ренне) слушать его, не перехватывая инициативу и не отклю-чаясь, а сопереживая и пытаясь поставить себя на его место. 7. Упражнение «Перевоплощение». Попробуйте почувствовать себя на месте другого человека. Представьте, что он — это вы. Поставьте (посадите) себя на его место, влезьте в его внешность, проникните в его внутренний мир. Воспроизведите его посадку, походку, мимику, движения. Перевоплотитесь — постарайтесь почувствовать его чувствами и подумать его мыслями. 8. В компаниях чаще вылезайте на роль массовика-затейника. Не получается - учитесь.","Что нужно Ястребу Диагноз и общие предписания. Видя в окружающих врагов, вы невольно превращаете в них даже тех, кто мог бы быть вам другом. Возможных единомышленников вы против их воли превращаете в своих конкурентов. Чтобы этого не происходило, вы должны научиться быть более терпимыми и доброжелательными. Упражнения: 1. Упражнение «Улыбка». Вы должны приучить себя к тому, чтобы обычным выражением вашего лица стала теплая, доброжелательная улыбка. Если ее нет, должна быть готовность к ней. Внутренняя улыбка должна быть всегда. 2. Упражнение «Мир тебе». Первая фраза (внутренняя фраза, установка) при встрече с любым человеком у вас должна быть «Мир тебе!». Подарите ему это всей душой, всем сердцем! Выходя утром из дому, киньте это небу, птицам, деревьям! Какое-нибудь симпатичное дерево можно и обнять. Если с кем-нибудь начинаете спорить или ругаться, каждые 3 минуты вспоминайте и повторяйте: «Мир тебе!» — это поможет вам остановиться. Многим больше нравится (и просто спасает) другая внутренняя фраза, а именно: «Хорошо». Чтобы ни случилось, каждые пять минут говорите себе с внутренней улыбкой: «Хорошо!». На вас кричат — «Хорошо». Вы кричите — тоже «Хорошо». Через какое-то время кричать уже не захочется никому, и в душе станет светло и тепло. 3. Упражнение «Передача инициативы». Чаще передавайте собеседнику инициативу в разговоре. Пусть разговор будет про то, что хочет он, и так, как хочет он. 4. Упражнение «Оценка на себя». Чаще становитесь оцениваемым, а не оценивающим. Как рядом с вами чувствуют себя окружающие? Им уютно от вас и рядом с вами? Если кто-то совершил ошибку, обратите внимание не на этот факт, а на свою реакцию в этой ситуации. 5. Упражнение «Приятный разговор». Если вопрос не слишком принципиальный (кстати, учитесь чаще оценивать его именно так), постарайтесь разговор сделать просто приятным. Прав собеседник или нет, глуп или нет — сделайте так, чтобы ему с вами было хорошо. 6. Упражнение «Облако в штанах». Учитесь говорить меньше, тише, мягче. Старайтесь согласиться, а не возразить. Чаще говорите «Да», а не «Нет». Избегайте категоричных фраз и интонаций. 7. Упражнение «Комплименты и благодарность». Используйте любую удобную возможность, чтобы сказать человеку что-то о нем и о его действиях хорошее. Все, что вам в человеке понравилось, выразите: глазами, улыбкой, и, конечно же, словами. Разрешите себе восхищаться: «Вы сегодня прекрасно выглядите!» «От души спасибо, это просто восхитительно!» Главное, чтобы это было искренне, а это зависит только от вас. 8. Упражнение «Гроза отменяется». Учитесь сдерживать свои отрицательные эмоции. Вам тяжело их сдерживать, а окружающим тяжело их переносить. Учитесь не ругаться. Не слабо целую неделю всем все прощать, принимать с пониманием, не критиковать и не делать замечания, не осуждать, не ругаться? Если неделю слабо, то сколько не слабо? 9. Упражнение «Мудрец». Учитесь мудрости, созерцательному взгляду на жизнь и умению проигрывать. Ваш проигрыш — ваш новый опыт и возможность извлечь из этого урок. Что бы ни произошло, прежде чем негодовать или расстраиваться, спросите себя: «А как бы к этому отнесся мудрый человек?»"];
+var bru=["Что нужно знать Голубю","Что нужно знать Страусу","Что нужно знать Ястребу"];
+
+
+
+
+
+   
+
+
+
+//leng(0);
+
+
+var hh="<h3>";
+var valur = 15;
+var notx=5;
+var mat = [ [0, 1, 2], [2, 0, 1], [1, 2, 0] ];
+// zona not touch
+var lang=[];
+var toSoc=[], toGol=[], toStr=[];
+var e, ta=0, tb=1, tc=2, ass=1;
+var ser=4, vb="bb";
+var ha=0, hb=0, hc=0, turnip=0, john=5, o=0,k=0;
+var zer=0;
+var on=2,pb=0;
+var mi=1;
+var  ru=[],dex=[],gol=[],str=[],soc=[],tip=[],help=[],top=[],why=[],bu=[];//img=[]; 
+window.onload = function(){
+leng(0)//defolt language
+//l("ru")
+//cn()
+//zz()
+}; 
+
+function leng(a){
+    if(pb==0){
+    pb++
+    sse(pb)
+}else{
+	pb--
+	see(pb)
+}
+    let oo=confirm("My first {renjs} engine, for tests😊🤗💡, easy🥃. So far this is just a sketch of pieces of code therefore appreciate its flaws! please😊😽🤔this will help me assemble a ready-made constructor, if you are Russian then press yes*")
+    oo ? sse(0) : sse(1)
+        lang=ru;
+        doc("bb2",lang[0]);
+        doc("bb0",lang[1]);
+        doc("bb1",lang[2]);
+        doc("bb3",lang[3]);
+       // alert(lang)
+   // }
+    
+}
+
+function sse(lx){
+    if(lx==0){//russia            
+    ru=lru
+    dex=dru
+    gol=gru
+    str=sru
+    soc=cru
+    tip=tru
+    help=hhru
+    top=oru
+    why=wru
+    bu=bru
+    //img=iru
+    }
+    if(lx==1){//english            
+    ru=len
+    dex=den
+    gol=gen
+    str=sen
+    soc=cen
+    tip=ten
+    help=hhen
+    top=oen
+    why=wen
+    bu=ben
+    //img=ien
+    }
+    
+}
+
+
+
+
+
+
+function d(){
+    
+    document.getElementById("t1").remove();
+}
+function rm(y,s){
+var t=0;
+
+    for (t=0; t<s; t++){
+    document.getElementById(y+t).remove();
+    //alert (vb+t)
+   }
+
+}
+
+
+function go(a){//unichtozhenie
+if(a==8){
+   rm("bb",4)
+   setx();
+   }
+/*
+var element = document.getElementById(vb+t); element.parentNode.removeChild(element);
+*/
+/*var no = document.getElementById("p1");//ress
+no.insertAdjacentHTML('beforebegin', '<input type="button" value="yes" id="'+"x"+'" onclick="go()">');
+    */         
+    if(a==1){//pusk test ustorel()
+    //ser=3; 
+    //vb="bb";
+   // alert (ser)
+    setx();
+}
+
+
+    if(a==2){//sozdat' conopki obratno tablo
+        var rs = document.getElementById("b0");//ress
+    var l = document.getElementById("b1");//tablo
+    var yes = document.getElementById("b2");//r0
+    
+    rs.insertAdjacentHTML('beforebegin','<input type="button" value="'+lang[1]+'" id="bb0" onclick="go(8)">');
+    l.insertAdjacentHTML('beforebegin','<input type="button" value="'+lang[2]+'" id="bb1" onclick="help()">');
+    
+        yes.insertAdjacentHTML('beforebegin','<p id="bb2">'+lang[0]+'</p>');
+    }//reset meny !!
+
+}
+
+
+
+
+
+function setx(){//stroyka yest okna
+    
+    var rs = document.getElementById("pp0");//ress
+    var l = document.getElementById("pp1");//tablo
+    var yes = document.getElementById("pp2");//r0
+    var no1 = document.getElementById("pp3");//r1
+    var no2 = document.getElementById("pp4");//r2
+    var ok = document.getElementById("pp5");//ok
+    
+ rs.insertAdjacentHTML('beforebegin','<input type="button" value="'+lang[8]+'" id="i4" onclick="re()">');
+  l.insertAdjacentHTML('beforebegin','<div id="i5" onclick="oo()">Something went wrong</div>');
+ yes.insertAdjacentHTML('beforebegin', '<p id="i0">A</>'+'<input type="radio" value="ооорррi" id="" name="a" onchange="to(0)"><lebl id="i6">0</lebl>');
+no1.insertAdjacentHTML('beforebegin', '<p id="i1">B</>'+'<input type="radio" value="i" id="" name="a" onchange="to(1)"><labl id="i7">0</labl>');
+ no2.insertAdjacentHTML('beforebegin','<p id="i2">C</>'+'<input type="radio" value="i" id="" name="a" onchange="to(2)"><labl id="i8">0</labl>');
+ ok.insertAdjacentHTML('beforebegin', '<input type="button" value="'+lang[9]+'" id="i3" onclick="ok()">');
+ 
+ sp()//wywod index 0 zapolnit znach
+}
+
+
+function gr(a){
+    //document.getElementById("r3").remove()
+   // ser=6;//9
+    //vb="i"
+    //if(a==1){
+    go();
+   // alert (ser)
+}//}
+    
+function to(tutanota){
+    e=tutanota;
+}
+
+function ok(){//klick
+   
+    if(e==undefined){//not wwoda
+    alert('why why? '+lang[7])
+    return 
+    }
+    if(turnip<1){
+    crutch()
+        //alert ("ttghh")
+        //turnip++
+        //sp()
+    }else{
+    //lecop()//wuwodit corectno ili net
+    cc()//timer click
+    
+    //turnip
+    
+    //sp()
+   // alert (e)
+   // alert (turnip)
+   
+   
+   if(turnip>15){
+        //console.log("fgggg")
+    }else{
+    if(e==ta){//ctn
+    
+    
+       toGol[ha]=turnip;
+       ha++
+       //alert(toGol)
+    }
+    if(e==tb){        
+    
+    toStr[hb]=turnip;
+    //alert(toStr)
+      hb++
+    }
+    if(e==tc){        
+       toSoc[hc]=turnip;
+       hc++
+       //alert(toSoc)
+    }}//ctn
+   
+    if(turnip>=valur){
+       //out
+       
+       
+       var io=zer;
+       turnip=zer;
+       ha=zer
+       hb=zer
+       hc=zer
+       ta=mat[zer][io];
+       io++
+       tb=mat[zer][io];
+       io++
+       tc=mat[zer][io];
+       john=notx
+       ass=0;
+       io=zer
+       rm("i",6)
+       out()
+       return
+   }
+   
+
+    
+    if(turnip==john){//umnozhitel'
+      //  var t=0;
+   // for (t=0; t<ser; t++){
+   
+   if(ass>=mat.length){
+   
+   //alert(ass)
+       ass=0
+       
+       return
+   }
+       ta=mat[ass][0];
+       tb=mat[ass][1];
+       tc=mat[ass][2];
+    //alert(ta)
+    //alert(tb)//test
+    //alert (tc)
+       ass++;
+       john=john+notx;
+    }
+   crutch()
+    //turnip++;
+    //sp()
+}}    
+    //alert (5*2)
+    
+function crutch(){
+turnip++;
+    sp()
+}
+    //alert(mat.length)
+//function lecop(){ alert (nan)}
+
+
+function out(){//wywod rezultata
+    
+    var re = document.getElementById("pp5");//ok    
+    //img 
+    var l= document.getElementById("pp0");//ok
+    var la = document.getElementById("pp1");//ok
+    var ls = document.getElementById("pp2");//ok
+    
+    
+    
+   // alert ("gg")
+    
+ re.insertAdjacentHTML('beforebegin','<input type="button" value="'+lang[9]+'" id="i0" onclick="bur()">');
+  //img
+  l.insertAdjacentHTML('beforebegin','<details id="i5"> <summary id="i2">gol</summary><p id="i11">gol</p></details>');
+  la.insertAdjacentHTML('beforebegin','<details id="i6"> <summary id="i3">str</summary><p id="i12">str</p></details>');
+  ls.insertAdjacentHTML('beforebegin','<details id="i7"> <summary id="i4">sol</summary><p id="i13">soc</p></details>');
+  
+ /*golub {i2} peredelan
+  la.insertAdjacentHTML('beforebegin','<p id="i3">str</p>');
+  ls.insertAdjacentHTML('beforebegin','<p id="i4">soc</p>');*/
+  
+  
+ spx()
+}   
+
+function bur(){//iz rezultatov
+   // ser=5;
+   // vb="i"
+    doc("b5"," ")
+    rm("i",8)
+
+    go(2)
+}    
+function re(){//knopka reset
+//ser=6;
+//vb="i"
+rm("i",6)
+go(2)          
+}  
+  
+function sp(){//wywod dannyh
+    doc("i5",dex[turnip]);
+    doc("i6",gol[turnip]);
+    doc("i7",str[turnip]);
+    doc("i8",soc[turnip]);
+} 
+//function id(ar){if(ar!=0){ar=ar-1}}//horor
+
+function spx(){//podshet
+var ag=toGol.length
+if(ag!=0){ag--}
+var dff=[];
+var df=[];
+    dff[0]=ag;//mi -0 arr
+var bs=toStr.length
+if(bs!=0){bs--}
+var cs=toSoc.length
+if(cs!=0){cs--}
+//alert(dff)
+    dff[1]=bs; 
+    dff[2]=cs;
+       
+    df=dff.sort(function(a,b){ 
+       return b - a;
+       })
+       
+       
+      // alert (df)//col liderov
+       if(df[zer]==df[mi]){    //dublicaty       
+           if(df[on]==df[mi]){               
+               doc("b5",hh+lang[10]+" "+ag+hh)
+               img(3)
+           }else{             
+               doc("b5",hh+lang[11]+" "+ag+hh)
+              img(4)
+           }
+       }else{
+           
+       
+       
+       
+       
+       
+    if(df[zer]==ag){
+               //document.getElementById("b2").innerHTML = "golub"+ag;
+               doc("b5",hh+lang[4]+" "+ag+hh)
+               doc("b6",tip[0]);
+               al(0)
+               img(0)
+        }
+    
+    if(df[zer]==bs){
+               //document.getElementById("b2").innerHTML = "straus"+bs;
+               doc("b5",hh+lang[5]+" "+bs+hh)
+               doc("b6",tip[1])
+               al(1)
+               img(1)
+        }
+    if(df[zer]==cs){
+               //document.getElementById("b2").innerHTML = "socol"+cs;
+               doc("b6",tip[2])
+               doc("b5",hh+lang[6]+" "+cs+hh)
+              al(2)
+              img(2)
+        }
+    
+    
+    }//else
+    
+    /*var q=1+ag;
+    var w=1+bs;
+    var r=1+cs;*/
+    
+    doc("i2",lang[4]+" "+ag);//costyl' -1 
+    doc("i3",lang[5]+" "+bs);
+    doc("i4",lang[6]+" "+cs);
+    
+    
+    ty("i11",ag,toGol,gol);//8
+    ty("i12",bs,toStr,str);//9
+    ty("i13",cs,toSoc,soc);//10
+    //alert(toGol)
+    //alert(toStr)
+    //alert(toSoc)
+  // alert(toGol+gol)
+   //alert(toStr+str)
+  // alert(toSoc+soc)
+    
+    
+  // img(0)//wremenno 
+    
+}
+
+
+function doc(a,b){                       
+document.getElementById(a).innerHTML = b;
+}
+
+function oo(){
+o++
+var os;
+    if(o>=5){
+        os=prompt("grumpy woman");
+        o=0
+        if(os==11){
+        out()
+        }
+        
+        if(os==13){
+            out()
+            img(prompt("numder"))
+        }
+        
+        
+        
+        if(os==12){
+       // alert("hh")
+        var kk;
+        //for (t=0; t<b+1; t++){
+        for (kk=0; kk<7; kk++){
+        toGol[kk]=kk
+        }
+      var  kkk=0
+        for (kk=8; kk<12; kk++){
+        toStr[kkk++]=kk
+        }
+        toSoc[0]=0
+        toSoc[1]=15
+        out()
+        }
+    }
+}
+
+function img(im){
+var rt = document.getElementById("b2");//ok 
+rt.insertAdjacentHTML('beforebegin','<img id="i1"class="mx" width="300" height="150" src="'+imgs[im]+'">');
+}
+
+function help(){
+   // alert(vb)
+    alert(halp+top);
+    
+    
+}
+
+function al(l){
+var re = document.getElementById("b7");//ok   
+re.insertAdjacentHTML('beforebegin','<input type="button" value="'+bu[l]+'" id="i8" onclick="touch('+l+')">'); 
+    
+}
+
+
+
+//ne do bito !!!
+function ty(a,b,c,d){
+    var dox=[];
+    var t;
+    var n=0;
+
+    for (t=0; t<b+1; t++){
+    n++
+    dox[t]=n+")"+"."+"№"+(c[t])+" - "+d[c[t]]+"<br>";
+    //dox[t]="<br>"+c[t];
+   // alert (dox)
+    
+    }
+    //alert (dex) 
+    doc(a,dox)
+    //doc(a,c)
+}
+
+
+
+function cc(){//speed on time
+         //clearTimeout(zi); 
+         z(1)
+         k++;
+         if(k==1){
+         z()
+    }
+    
+    if(k>2){
+        x();
+       // document.write(""off"");
+        alert (lang[12])
+        k=0;//incapsul' 
+    }
+}
+
+function touch(g){
+alert(why[g])
+}
+
+function x(j){
+if(j==9){
+alert("We will think for a long time what to do? !!! ")
+    document.write("freedom)))))");
+}
+if(j==2){
+    k=0;
+}else{
+//clearInterval(t,100);
+//document.write(t);
+clearTimeout(ti); 
+//setInterval(myAlert);
+}}
+function z(jj){
+ ti = setTimeout(() => x(2), 500); 
+//alert(timerId); // идентификатор таймера
+// clearTimeout(timerId); 
+// alert(timerId); // тот
+}
+function zz(){
+ zi = setTimeout(() => x(9), 6000);
+}
+
+
+
+
+
+
+
+
+           </script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div>Тест «Что вы за птица?» - рекомендации для прошедших тест Автор теста, предисловия и рекомендаций — психолог Николай Иванович Козлов. Тест взят из книги «Как относиться к себе и к людям или практическая психология на каждый день». Из данной статьи исключены пояснения для прохождения книжного варианта теста. Тесты любят все или почти все, но большинство отвечает на вопросы лишь для того, чтобы, узнав результат, оценить — нет, не себя, а тест: насколько тест точно угадал то, что человек знал о себе и без него… Да, тесты помогают человеку еще раз задуматься о себе, посмотреть на свои особенности немного «со стороны», но основная функция популярных тестов — развлечение. Тест «Что вы за птица?» — не скучный, но дан здесь с другими целями.</div>
+
+
+
+
+
+						</div>
+
+		<div class="pied">
+
+<footer>Copyright bird.4.5.2020,05,02,quarantine "test sample if this violates the rights of messages to me about it please"</footer>
+
+
+</div></div></body></html>

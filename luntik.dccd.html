@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Luntic by DFv05.05.20</title>
+        <title>Luntic by DFv10.05.20</title>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <style>
@@ -11,13 +11,56 @@
 #qs,#ps,#qps {
     color: green;
 }
+#preloader {
+      position: fixed;
+      left: 0;
+      top: 0; 
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fbfbfb url('5.gif')      
+        no-repeat center center;
+}
+#prel {
+      position: fixed;
+      left: 0;
+      top: 0; 
+   
+      width: 100%;
+      height: 100%;
+      background: #6aa2ff;
+   
+}
+
+.outer:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* добавим горизонтальное центрирование */
+.outer {
+  text-align: center;
+}
     </style>
     </head>
     <body>
-    <span id="luntic">NT luntic lite</span>
+    <span id="luntic" onclick="alert('the application is not a special tool!🧐')">NT luntic lite🐰</span>
+    				<div id="preloader"><div class="outer" style="height:100px; width: 100%">
+  <span class="inner">
+    DF<br>NT luntic lite 
+  </span>
+</div></div>
     <br>
     <br>
-    
+    <div id="prel" class="outer" style="height:100px; width: 100%; display: none"><input type="file" id="files" multiple><button onclick="dkk()" id="">❌</button></div>
     <details> <summary>CD</summary>
      <!--
      HI my friends 🤗🥀
@@ -47,9 +90,9 @@
         </center>
         <details> <summary id="m10">results out</summary>
         <textarea id="text" style="width:100%; height:100px"readonly>no export library 🧐 </textarea>
-        <button id="m4" onclick=" text.select();document.execCommand('copy') ? alert('copy👍') : alert('no copy😝'); ">copy library</button>
+        <button id="m4" onclick=" text.select();document.execCommand('copy') ? alert('copy👍') + w4() : alert('no copy😝'); ">copy library</button>
         <textarea id="textr" style="width:100%; height:50px"readonly>no export code🧐</textarea>
-        <button id="m5" onclick=" textr.select();document.execCommand('copy') ? alert('copy👍') : alert('no copy😝'); ">copy init</button>
+        <button id="m5" onclick=" textr.select();document.execCommand('copy') ? alert('copy👍') + w4(1) : alert('no copy😝'); ">copy init</button>
         </details>
         </div>        
         <p id="c">
@@ -81,24 +124,27 @@
         <button id="m7" onclick="afs()">import vocabulary</button>
         <button id="m8" onclick="bfs()">match</button>
         </center>
-
-
-
-
-
-
-        <script>
+<script>
+const zl='text/plain';
+const libn='library ';
+const swn='luntic sw ';
+const an=Date()+'.txt';
+const wit =(a,s)=>{ ////};
+if(a) {sw(a,libn+an,zl);}if(s){sw(s,swn+an,zl)}};        				
+setTimeout(function () {/*if(prompt('password','1')==1) {							document.getElementById('preloader').style.display='none'; }*/		document.getElementById('preloader').style.display='none';},2000);
 let pp=0,po=' ';
 let xk='';
-var ru=["импорт","стереть","экспорт","удалить","копировать словарь (если изменяли) {/_!_ приват}","копировать результат","импорт массива","импорт библиотеки","сопоставить","сбросить","вывод","дополнительно","перевод","библиотека","введённые значения","изменить имя","Внимание: вы хотите создать новый словарь, это действие уничтожит старый ","сохранить новый результат","сохронить новый блок","Привет, это псевдо-шифратор, нажмите на (изменить имя)[✓] кнопку, чтобы изменить ввод текста с кнопок, что на кнопках в словаре","нет данных","🐷<br> Luntic Lite представляет собой простой и удобный в использовании шифратор- дешифратор - редактор и графическое приложение для переписки закодированными в  цифры слова из специального словаря (созданного пользователем, и распространяется как пароль для расшифровки зашифрованного текста), его можно использовать для переписки в социальных сетях, не боясь что кто-то расшифровки или каким либо другим способом раскроют сообщение, не имея словаря созданного пользователем отправителем - получателем.<br>⚙️<br> Особенность:<br>Создание словаря, редактирование словаря и сохранение его для передачи.<br>* Обрезайте и редактируйте ваши слова в библиотеке, удаляя ненужные части слов.<br>* Быстрая изменение и редактирование ваших слов: Без потери качества и без повторного кодирования для молниеносной обработки.<br>* Точное шифрование и не возможность раскрыть или расшифровать супер компьютерами  кода. Экспорт в ваш файл - не допускается показать библиотеку, так как с помощью нее кто-то легко раскроют шифрованные слова.<br>* Разделяйте код на две части, для более детального его размышления.<br>* Удаляйте середину кода.<br>* Создание цельного кода или библиотеки из нескольких текстовых или приложений кода.<br>* Сочетайте красивые слова с вашими предложениями.<br>* Настраивайте библиотеку под свой вкус, и код в том числе, кодовые дорожки готового файла, скрипта - отдельно.<br>* Претврощайте просмотр файла в редакторах ибо может произойти ошибочная расшифровка кодов!<br>* Делайте красочные слова, чтобы получателю было приятно читать, не используйте не нормативную лексики, Лунтик этого не любит!<br>* Извиняйте слова поставив галочку ✓.<br>* Добовляйте слова нажав на '+'.<br> удачи!<br>Google Play - пока не доступен!<br>🔑 <br>Разблокирован Premium функционал!<br>🌀 <br>Убран модуль шифрования кода, это не нужно в игрушках)!<br>⚡ <br>Убран модуль скрыться не нормативных слов!<br>🍅 <br>Добавлена русская локализация.<br>🔞<br> Пожалуйста не используйте приложение для плохих целей!<br>"];
-var en = ["import", "erase", "export", "delete", "copy dictionary (if changed) {/ _! _ private}", "copy result", "import array", "import library"  , "match", "reset", "output", "additional", "translation", "library", "entered values", "change name", "Attention: you want to create a new dictionary, this action will destroy the old one",  "save new result", "save new block", "Hello, this is a pseudo-encoder, click on the (change name) [✓] button to change the text input from the buttons that are on the buttons in the dictionary", "no data","🐷 <br> Luntic Lite is a simple and easy-to-use encryptor-decoder - editor and graphical application for correspondence of digitally encoded words from a special dictionary (created by the user, and distributed as a password for decrypting encrypted text), it can be used for correspondence in  social networks, without fear that someone decrypts or in any other way will reveal the message without having a dictionary created by the user by the sender - the recipient. <br> ⚙️ <br> Feature: <br> Create a dictionary, edit the dictionary and save it for transmission.  <br> * Trim and edit your words in the library by removing unnecessary parts of words. <br> * Quickly change and edit your words: No loss of quality and no re-encoding for lightning fast processing. <br> * Accurate encryption and no way to break or  decrypt by super computers of the code.  Export to your file - it is not allowed to show the library, as it can easily be used by someone to uncover the cipher words. <br> * Separate the code into two parts for more detailed thinking. <br> * Remove the middle of the code. <br>  * Create a whole code or library from several text or code applications. <br> * Combine beautiful words with your sentences. <br> * Customize the library to your liking, and the code including the code paths of the finished file, the script - separately. <br> * Forgive the viewing of the file in editors for an erroneous decoding of codes may occur! <br> * Make colorful words to make the recipient pleasant to read, do not use non-normative vocabulary, Luntik does not like this!  <br> * Add words by clicking on the '+'. <br> good luck! <br> Google Play - not available yet! <br> 🔑 <br> Premium functionality unlocked! <br> 🌀 <br> The code encryption module has been removed,  it is not necessary in toys)! <br> ⚡ <br> The module to hide non-normative words is removed! <br> 🍅 <br> Add  Lena Russian localization. <br> 🔞 <br> Please do not use the application for bad purposes! <br> "];
-var fr = ["ymportearje", "wiskje", "eksportearje", "wiskje", "kopiearje wurdboek (as wizige) {/ _! _ privee}", "kopiearje resultaat", "ymportearje array", "ymportearje bibleteek"  , "oerienkomt", "weromsette", "útfier", "ekstra", "oersetting", "biblioteek", "ynfierde wearden", "namme feroarje", "Let op: jo wolle in nij wurdboek meitsje, dizze aksje sil it âlde ferneatigje",  "nij resultaat bewarje", "nij blok bewarje", "Hallo, dit is in pseudo-kodearder, klikje op de (feroarje namme) [✓] knop om de tekstynfier te feroarjen fan 'e knoppen dy't op' e knoppen yn it wurdboek stean", "gjin gegevens","🐷 <br> Luntic Lite is in ienfâldige en maklik te brûken kodearder-dekoder - bewurker en grafyske applikaasje foar korrespondinsje fan wurden kodearre yn sifers út in spesjaal wurdboek (makke troch de brûker, en ferdield as in wachtwurd foar dekodearjen fan fersifere tekst), it kin brûkt wurde foar korrespondinsje yn  sosjale netwurken, sûnder eangst dat immen ûntsifert of op in oare manier it berjocht sil iepenbiere sûnder dat in wurdboek hat makke troch de brûker troch de stjoerder - de ûntfanger. <br> ⚙️ <br> Eigenskip: <br> Meitsje in wurdboek, bewurkje it wurdboek en bewarje it foar oerdracht.  <br> * Bewurkje en bewurkje jo wurden yn 'e bibleteek troch ûnnedige dielen fan wurden te ferwiderjen. <br> * Feroarje en bewurkje jo wurden fluch: Gjin kwaliteitsferlies en gjin opnij kodearjen foar bliksem rappe ferwurking. <br> * Krekte kodearring en gjin manier om te brekken of  dekodearje troch supercomputers fan de koade.  Eksportearje nei jo bestân - it is net tastien de bibleteek sjen te litten, lykas dêrefter kin ien de kodearwurden maklik ûntdekke. <br> * Diel de koade yn twa dielen, foar mear detaillearre tinken. <br> * Ferwiderje it midden fan 'e koade. <br>  * Meitsje in heule koade of bibleteek út ferskate tekst- of koade-tapassingen. <br> * Kombinearje prachtige wurden mei jo sinnen. <br> * Pas de bibleteek nei jo smaak oan, en de koade ynklusyf de koadepaden fan it ôfmakke bestân, it skript - apart. <  br> * Ferjou it besjen fan it bestân yn redaksje foar in ferkearde dekodearring fan koades kin foarkomme! <br> * Meitsje kleurige wurden om de ûntfanger noflik te lêzen te meitsjen, brûk gjin net-normative wurdskat, Luntik liket dit net!  <br> * Wurden tafoegje troch te klikken op de '+'. <br> gelok! <br> Google Play - noch net beskikber! <br> 🔑 <br> Premium-funksjonaliteit ûntskoattele! <br> 🌀 <br> De koade-kodearingsmodule is fuortsmiten,  it is net nedich yn boartersguod)! <br> ⚡ <br> De module om net-normative wurden te ferbergjen is fuortsmiten! <br> 🍅 <br> Add  Lena Russyske lokalisaasje. <br> 🔞 <br> Brûk de applikaasje asjebleaft net foar minne doelen! <br> "];
+let lip,sv;
+var ru=["импорт","стереть","экспорт","удалить","копировать словарь (если изменяли) {/_!_ приват}","копировать результат","импорт массива","импорт библиотеки","сопоставить","сбросить","вывод","дополнительно","перевод","библиотека","введённые значения","изменить имя","Внимание: вы хотите создать новый словарь, это действие уничтожит старый ","сохранить новый результат","сохронить новый блок","Привет, это псевдо-шифратор, нажмите на (изменить имя)[✓] кнопку, чтобы изменить ввод текста с кнопок, что на кнопках в словаре","нет данных","🐷<br> Luntic Lite представляет собой простой и удобный в использовании шифратор- дешифратор - редактор и графическое приложение для переписки закодированными в  цифры слова из специального словаря (созданного пользователем, и распространяется как пароль для расшифровки зашифрованного текста), его можно использовать для переписки в социальных сетях, не боясь что кто-то расшифровки или каким либо другим способом раскроют сообщение, не имея словаря созданного пользователем отправителем - получателем.<br>⚙️<br> Особенность:<br>Создание словаря, редактирование словаря и сохранение его для передачи.<br>* Обрезайте и редактируйте ваши слова в библиотеке, удаляя ненужные части слов.<br>* Быстрая изменение и редактирование ваших слов: Без потери качества и без повторного кодирования для молниеносной обработки.<br>* Точное шифрование и не возможность раскрыть или расшифровать супер компьютерами  кода. Экспорт в ваш файл - не допускается показать библиотеку, так как с помощью нее кто-то легко раскроют шифрованные слова.<br>* Разделяйте код на две части, для более детального его размышления.<br>* Удаляйте середину кода.<br>* Создание цельного кода или библиотеки из нескольких текстовых или приложений кода.<br>* Сочетайте красивые слова с вашими предложениями.<br>* Настраивайте библиотеку под свой вкус, и код в том числе, кодовые дорожки готового файла, скрипта - отдельно.<br>* Претврощайте просмотр файла в редакторах ибо может произойти ошибочная расшифровка кодов!<br>* Делайте красочные слова, чтобы получателю было приятно читать, не используйте не нормативную лексики, Лунтик этого не любит!<br>* Извиняйте слова поставив галочку ✓.<br>* Добовляйте слова нажав на '+'.<br> удачи!<br>Google Play - пока не доступен!<br>🔑 <br>Разблокирован Premium функционал!<br>🌀 <br>Убран модуль шифрования кода, это не нужно в игрушках)!<br>⚡ <br>Убран модуль скрыться не нормативных слов!<br>🍅 <br>Добавлена русская локализация.<br>🔞<br> Пожалуйста не используйте приложение для плохих целей!<br>","загрузить файл? 🧐💩"];
+var en = ["import", "erase", "export", "delete", "copy dictionary (if changed) {/ _! _ private}", "copy result", "import array", "import library"  , "match", "reset", "output", "additional", "translation", "library", "entered values", "change name", "Attention: you want to create a new dictionary, this action will destroy the old one",  "save new result", "save new block", "Hello, this is a pseudo-encoder, click on the (change name) [✓] button to change the text input from the buttons that are on the buttons in the dictionary", "no data","🐷 <br> Luntic Lite is a simple and easy-to-use encryptor-decoder - editor and graphical application for correspondence of digitally encoded words from a special dictionary (created by the user, and distributed as a password for decrypting encrypted text), it can be used for correspondence in  social networks, without fear that someone decrypts or in any other way will reveal the message without having a dictionary created by the user by the sender - the recipient. <br> ⚙️ <br> Feature: <br> Create a dictionary, edit the dictionary and save it for transmission.  <br> * Trim and edit your words in the library by removing unnecessary parts of words. <br> * Quickly change and edit your words: No loss of quality and no re-encoding for lightning fast processing. <br> * Accurate encryption and no way to break or  decrypt by super computers of the code.  Export to your file - it is not allowed to show the library, as it can easily be used by someone to uncover the cipher words. <br> * Separate the code into two parts for more detailed thinking. <br> * Remove the middle of the code. <br>  * Create a whole code or library from several text or code applications. <br> * Combine beautiful words with your sentences. <br> * Customize the library to your liking, and the code including the code paths of the finished file, the script - separately. <br> * Forgive the viewing of the file in editors for an erroneous decoding of codes may occur! <br> * Make colorful words to make the recipient pleasant to read, do not use non-normative vocabulary, Luntik does not like this!  <br> * Add words by clicking on the '+'. <br> good luck! <br> Google Play - not available yet! <br> 🔑 <br> Premium functionality unlocked! <br> 🌀 <br> The code encryption module has been removed,  it is not necessary in toys)! <br> ⚡ <br> The module to hide non-normative words is removed! <br> 🍅 <br> Add  Lena Russian localization. <br> 🔞 <br> Please do not use the application for bad purposes! <br> ","upload files? 🧐💩"];
+var fr = ["ymportearje", "wiskje", "eksportearje", "wiskje", "kopiearje wurdboek (as wizige) {/ _! _ privee}", "kopiearje resultaat", "ymportearje array", "ymportearje bibleteek"  , "oerienkomt", "weromsette", "útfier", "ekstra", "oersetting", "biblioteek", "ynfierde wearden", "namme feroarje", "Let op: jo wolle in nij wurdboek meitsje, dizze aksje sil it âlde ferneatigje",  "nij resultaat bewarje", "nij blok bewarje", "Hallo, dit is in pseudo-kodearder, klikje op de (feroarje namme) [✓] knop om de tekstynfier te feroarjen fan 'e knoppen dy't op' e knoppen yn it wurdboek stean", "gjin gegevens","🐷 <br> Luntic Lite is in ienfâldige en maklik te brûken kodearder-dekoder - bewurker en grafyske applikaasje foar korrespondinsje fan wurden kodearre yn sifers út in spesjaal wurdboek (makke troch de brûker, en ferdield as in wachtwurd foar dekodearjen fan fersifere tekst), it kin brûkt wurde foar korrespondinsje yn  sosjale netwurken, sûnder eangst dat immen ûntsifert of op in oare manier it berjocht sil iepenbiere sûnder dat in wurdboek hat makke troch de brûker troch de stjoerder - de ûntfanger. <br> ⚙️ <br> Eigenskip: <br> Meitsje in wurdboek, bewurkje it wurdboek en bewarje it foar oerdracht.  <br> * Bewurkje en bewurkje jo wurden yn 'e bibleteek troch ûnnedige dielen fan wurden te ferwiderjen. <br> * Feroarje en bewurkje jo wurden fluch: Gjin kwaliteitsferlies en gjin opnij kodearjen foar bliksem rappe ferwurking. <br> * Krekte kodearring en gjin manier om te brekken of  dekodearje troch supercomputers fan de koade.  Eksportearje nei jo bestân - it is net tastien de bibleteek sjen te litten, lykas dêrefter kin ien de kodearwurden maklik ûntdekke. <br> * Diel de koade yn twa dielen, foar mear detaillearre tinken. <br> * Ferwiderje it midden fan 'e koade. <br>  * Meitsje in heule koade of bibleteek út ferskate tekst- of koade-tapassingen. <br> * Kombinearje prachtige wurden mei jo sinnen. <br> * Pas de bibleteek nei jo smaak oan, en de koade ynklusyf de koadepaden fan it ôfmakke bestân, it skript - apart. <  br> * Ferjou it besjen fan it bestân yn redaksje foar in ferkearde dekodearring fan koades kin foarkomme! <br> * Meitsje kleurige wurden om de ûntfanger noflik te lêzen te meitsjen, brûk gjin net-normative wurdskat, Luntik liket dit net!  <br> * Wurden tafoegje troch te klikken op de '+'. <br> gelok! <br> Google Play - noch net beskikber! <br> 🔑 <br> Premium-funksjonaliteit ûntskoattele! <br> 🌀 <br> De koade-kodearingsmodule is fuortsmiten,  it is net nedich yn boartersguod)! <br> ⚡ <br> De module om net-normative wurden te ferbergjen is fuortsmiten! <br> 🍅 <br> Add  Lena Russyske lokalisaasje. <br> 🔞 <br> Brûk de applikaasje asjebleaft net foar minne doelen! <br> ","uploaded files? 🧐💩"];
 //alert(en.length)
-var Nlang=[];
+var Nlang=[], iso=(i,s,o)=>lc[i]==en[s][o];
 var ldb=["en","ru"];//not sure
 //use with author’s PS.. designation!
 var lang = function (a,h){if(h!=undefined){ldb=h }else{ return ldb[a]}};
-
+const w4 =(a,s)=>{if(a) {
+wit(sv)}else{wit(lip)}};
 function x_mom(a) {
 if(a=='ru'){lang(0,ru) }
 if(a=='fr'){lang(0,fr) }
@@ -109,23 +155,25 @@ reo()
 wir("e",lang(19));
 wir("fucks",lang(21));
 }
+let P=()=>prompt();
 //wir("grr",lang(19))
 let wir = function(a,b){document.getElementById(a).innerHTML=b;}
-
+const control = document.getElementById("files");
+control.addEventListener("change",function(){xtext(control.files[0])},false);
 function feed(){
 if(confirm("wwod")==true){
 Nlang[pp]=prompt(Nlang,`${en[pp]}`)//cod aw ==false?alert("hhh"):let asss = prompt('Paste');asss=asss.split(',');for (let i=0;i<a.length;i++){Nlang[i]=asss};
 pp++//little money for this, so sorry
-feed()
+feed() 
 } else{
 confirm('u')
 tex("not",Nlang)
 pp=0;//not enough for a burger '' (
 lang(0,Nlang)
 }
-
 }
-
+var o=['a','d','s','i','l',3,1,'s','s'];//fucking fool toolkits
+let mess =(a,s)=>confirm(lang(22))
 function reo(a,b){
 for (let nj=0;nj<16;nj++){
 let vn='m'+nj;
@@ -137,7 +185,7 @@ lang(0,ru)
 reo()
 var j= 0;
 var m="";
-var f;
+var f,fоо;
 var ip=0;
 var w="";
 var str = ["Hi","December","1","Have  a  good  mood","good  luck","and","Df","clone","2019","fuck","up","Luntik","how are you","where are you","come","till","bye","good luck","you went","home"];
@@ -145,12 +193,11 @@ function wirt(){
   wir("q",m);
   wir("w",w);
 }
-
-
+//s               }
 //ss
 function cd(o){
 
-f = document.getElementById("ch").checked;
+f = iso(23,6,0)?document.getElementById("ch").checked:0;
 if (f==false){
     var n =' . ';
     var u =' ';
@@ -165,7 +212,7 @@ if (f==false){
 }
 }
 function bc(a){
-    document.getElementById(a).value= str[a];
+  try{document.getElementById(a).value= str[a];} catch(w) {}  
 }
 function g(d){
 if (j==0){
@@ -194,10 +241,15 @@ clonn();
       ip=1;
     }
 }
-
+function errors(e) {
+		alert(e)
+}
 function tex(a,b){
     wir("text",a)
     wir("textr",b)
+    lip=a
+    sv=b
+   // wit(a,b)
 }
 
 function nk(){
@@ -207,22 +259,28 @@ ass=ass.split(',');
 for (let i=0;i<a.length;i++){
 en[i]=ass
 }
-// no fack
+// no ass
 }
-
-
+let girl;
+let dk =(a,s)=>{if(girl=s) {document.getElementById(a).style.display='block'}else{document.getElementById(a).style.display='none'};}
 //ss
+//®()
+//&&({45})
 function af(){
 if ( confirm(lang(16))==true){
+if(mess()) {
+dk('prel',1);			
+}else {
 cr();
 str='';
-str= prompt();
-str=str.split(' '); 
+str=P();
+str=iso(12,12,4)?str.split(' '):str; 
 m='';
 w='';
   wir("q",' ')
   wir('w',' ')
 clonn();
+}
 }}
 function bf(){
 var zz = m.lastIndexOf(' _ ') ;
@@ -243,20 +301,21 @@ return String.fromCodePoint(b);
 }else{
 return b.codePointAt(0);
 }
+function trial() {
+		
 }
-
+}
 function urlx(a,v){
 if(a==0){ 
 return decodeURI(v)
 }else{
-return encodeURI(v)}}
-
-
+return encodeURI(v)}};//sinning is very bad, and nothing good comes of it ;)
 //ss
-function ef(){
-var ee = str.toString().replace(/[\.,%]/g, ' ');
+function ef(a){
+if(a) {
+fоо=window.location.href;}else {var ee = str.toString().replace(/[\.,%]/g, ' ');
   tex(ee,w)
-}
+}}
 function rf(){
    m="";
    f="";
@@ -269,15 +328,15 @@ function coy(a,b,c){
 function nlang(){
 alert(7)
 }
-
+function dog() {const control = document.getElementById("files");
+control.addEventListener("change",function(){text(control.files[0])},false);			
+}
 }
 function clonn(){
 wir("fucks",lang(21));
 var i = str.length
 var n = 0;
-var div = document.getElementById("clon");
-
-     
+var div = document.getElementById("clon"); 
       for (n = 0; n<i; n++){
   div.insertAdjacentHTML('beforebegin', '<input type="button" value="DF" id="'+n+'" onclick="cd('+n+')">');
   }
@@ -287,7 +346,7 @@ var div = document.getElementById("clon");
   }
 setTimeout(clonn, 1000);
 var n;
-
+let fо=window.location.hash;
 function cr(){
 for (n=0;n<str.length;n++){
  var element = document.getElementById(n); element.parentNode.removeChild(element);
@@ -296,27 +355,30 @@ for (n=0;n<str.length;n++){
 }
 //}
 </script>
- 
  <h6>Please do not use this for evil! all evil brings evil!</h6>
-
-
 <script>
-let x8=()=>window.location.href.replace(window.location.hash, '');
-alert(x8())
+ef(1);
+let lc=fоо.replace(fо, '');
 var tt='';
 var strx = [0,3,2];
 function ffs(){
+if(mess()) {
+				dk('prel',2)
+}else {
 tt='';
-strx = prompt();
+strx =P();
 if(strx[0]==undefined){ strx[0]="Luntic"}
-strx=strx.split(' ');
+strx=iso(4,9,2)?strx.split(' '):strx;
 alert(strx);
-}
+}}
 function afs(){
+if(mess()) {
+dk("prel",3)				
+}else {
 str='';
-str = prompt();
-str=str.split(' ');
-}
+str =P();
+str=lc[4]==en[12][4]?str.split(' '):str;
+}}
 function bfs(){
 var oo = strx.length;
 if( strx.length >0){
@@ -345,16 +407,55 @@ function ssf(){
     tt='';
     //ps my how bad I am (!
 }
+
+function sw(data, filename, type) {
+    var file = new Blob([data], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var a = document.createElement("a"),
+                url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);  
+        }, 0); 
+    }
+}
+
+//23:01:21:6:21:01:0:0
+				
+const xtext = (text) => {						  
+    const r = new FileReader();
+    r.readAsText(text, "windows-1251");
+    r.onload = () => (pussy(r.result, girl))}
+    function pussy(a,s) {
+    //alert(s)
+     switch (s) {
+     case 1 :
+cr();dkk();str='';str=a.split(' ');m='';w='';wir("q",' ');wir('w',' ');clonn();
+     break;
+     case 2:
+tt='';strx = a;dkk();if(strx[0]==undefined){ strx[0]="Luntic"};strx=strx.split(' ');alert(strx);
+	 break;
+	 case 3:										
+str='';dkk();str = a;str=str.split(' ');
+	 break;
+    default:
+    alert('😠')
+ }
+ }
+ let dkk =(a,s)=>a?dk('prel',1):dk('prel');
 </script>
 </div>
-
-
  </details>
         <details> <summary>info</summary>
        <center><div id="fucks" >
-
        </div>
-<button onclick="nk()">🍻</button>
+<button onclick="confirm(`thanks you ${Date()}`)?alert('😭'):alert('😅')">🍻</button>
 </details>
 <p>
 <select onchange="x_mom(this.value);">
@@ -363,7 +464,6 @@ function ssf(){
 <option value="fr">fr</option>
 <option value="nlang">new lang</option>
 </select>
-
-          <footer><small> DC_CD By DF v 2.6.2.1 carantine 05.05.20</small></footer>
+          <footer><small> DC_CD By DF v 81.6.0 carantine 05.05.20</small></footer>
     </body>
 </html>
